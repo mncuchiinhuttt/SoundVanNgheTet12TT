@@ -31,6 +31,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-vercel": "^5.5.2",
+		"@vercel/analytics": "^1.4.1",
 		"gh-pages": "^6.3.0",
 		"howler": "^2.2.4",
 		"socket.io": "^4.8.1",
