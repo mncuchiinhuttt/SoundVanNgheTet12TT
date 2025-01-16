@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 	
 	let { data } = $props();
+	const dir = process.cwd() + "/static/audio/";
 	let audioElements: HTMLAudioElement[] = [];
 
 	function handleKeyPress(event: KeyboardEvent) {
@@ -35,7 +36,7 @@
 		<div>
 			<span>{i + 1}: {fileName}</span>
 			<audio controls bind:this={audioElements[i]}>
-				<source src={`../audio/${fileName}`} type="audio/mpeg">
+				<source src={`${dir}/${fileName}`} type="audio/mpeg">
 			</audio>
 		</div>
 	{/each}
