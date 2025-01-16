@@ -35,7 +35,7 @@
 		<div>
 			<span>{i + 1}: {fileName}</span>
 			<audio controls bind:this={audioElements[i]}>
-				<source src={`src/lib/audio/${fileName}`} type="audio/mpeg">
+				<source src={`/audio/${fileName}`} type="audio/mpeg">
 			</audio>
 		</div>
 	{/each}

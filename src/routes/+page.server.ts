@@ -5,7 +5,7 @@ import fs from "fs";
 
 export const load = (async() => {
 	let fileNames: string[] = [];
-	const dir = path.join(process.cwd(), "/src/lib/audio");
+	const dir = process.cwd() + '/audio';
 	console.log(dir);
 	const files = fs.readdirSync(dir, { withFileTypes: true });
 	for (const file of files) {
