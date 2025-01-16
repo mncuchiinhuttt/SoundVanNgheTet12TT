@@ -2,7 +2,7 @@
 	import { onMount } from "svelte";
 	
 	let { data } = $props();
-	const dir = process.cwd() + "/static/audio/";
+	const dir = process.cwd() + "/audio/";
 	let audioElements: HTMLAudioElement[] = [];
 
 	function handleKeyPress(event: KeyboardEvent) {
